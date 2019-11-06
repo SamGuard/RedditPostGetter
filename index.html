@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"> 
+	<style>
+      body {
+        font-family:'Open Sans', sans-serif;
+        font-size: 15px;
+      }
+    </style>
+
+	<title>Reddit Post Getter</title>
+</head>
+<body>
+	<div>This web app will get the top posts from a given subreddit on www.reddit.com</div>
+	<div>
+	<form name="form" action="./display" method="GET">
+		<table>
+			<tr><th>Subreddit Name</th><th><input type="text" name="subreddit"></th></tr>
+			<tr><th>Sort by</th><th><select name="cars">
+	    		<option value="top">top</option>
+	    		<option value="hot">hot</option>
+	    		<option value="rising">rising</option>
+	    		<option value="controversial">controversial</option>
+	    		<option value="new">New</option>
+	    		<option value="best">Best</option>
+	  		</select></th></tr>
+	  		<tr><th>Number of posts to get (max 100)</th><th><input type="number" name="limit"></th></tr>
+			<tr><th><input type="submit" name="submit"  title="Go"></th></tr>
+		</table>	
+	</form>
+	</div>
+
+</body>
+</html>
